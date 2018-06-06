@@ -1,6 +1,7 @@
 package org.skuatracing.springbench
 
 import io.jaegertracing.Tracer
+import io.jaegertracing.samplers.ProbabilisticSampler
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
@@ -24,7 +25,7 @@ class MeowController {
 class SpringBenchApplication {
     @Bean
     fun tracer(): io.opentracing.Tracer {
-        return Tracer.Builder("spring-bench").build()
+        return Tracer.Builder("spring-bench").withSampler(ProbabilisticSampler(0.001)).build()
     }
 }
 

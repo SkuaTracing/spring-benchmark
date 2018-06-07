@@ -36,6 +36,7 @@ compileTestKotlin {
 }
 
 repositories {
+	mavenLocal()
 	mavenCentral()
 }
 
@@ -46,6 +47,6 @@ dependencies {
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
 	compile("io.opentracing.contrib:opentracing-spring-cloud-starter:0.1.13")
-	compile("io.jaegertracing:jaeger-core:0.28.0")
+	compile("org.skuatracing:jaeger-core:0.28.1-SNAPSHOT")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

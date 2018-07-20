@@ -1,7 +1,7 @@
 package org.skuatracing.springbench
 
-import io.jaegertracing.Tracer
-import io.jaegertracing.samplers.ProbabilisticSampler
+import org.skuatracing.Tracer
+import org.skuatracing.samplers.ProbabilisticSampler
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication

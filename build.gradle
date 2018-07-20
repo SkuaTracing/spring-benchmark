@@ -44,8 +44,11 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile("org.springframework.boot:spring-boot-starter-web")
+	compile("org.springframework.boot:spring-boot-starter-jdbc")
+	compile("org.springframework.boot:spring-boot-starter-mustache")
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
+	compile("org.postgresql:postgresql")
 	compile("io.opentracing.contrib:opentracing-spring-cloud-starter:0.1.13")
 	compile("org.skuatracing:jaeger-core:0.28.1-SNAPSHOT")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
